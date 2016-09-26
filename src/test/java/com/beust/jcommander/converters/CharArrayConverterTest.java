@@ -18,8 +18,6 @@
 
 package com.beust.jcommander.converters;
 
-import java.net.UnknownHostException;
-
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -30,7 +28,7 @@ public class CharArrayConverterTest {
 	private static final CharArrayConverter CONVERTER = new CharArrayConverter();
 
 	@Test
-	public void testString() throws UnknownHostException {
+	public void testString() {
 		Assert.assertEquals(CONVERTER.convert(FIXTURE), FIXTURE.toCharArray());
 	}
 
